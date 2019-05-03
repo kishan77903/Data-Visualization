@@ -65,4 +65,5 @@ def visualize():
     return render_template('visual.html')
 
 if __name__ == '__main_flask__':
+    app.debug=1
     app.run(debug=True)
