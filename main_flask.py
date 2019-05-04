@@ -65,6 +65,10 @@ def visualize():
             value_count[each] = len(df[df['target']==each])
         fig = plt.pie(value_count.values(),labels=value_count.keys(), autopct='%1.1f%%')
         plt.title("Pie Chart of Output Classes for selected Dataset")
+    try:
+        os.remove(filename_path)
+    except:
+        pass
     os.remove("static/Visual.jpg")
     plt.savefig("static/Visual.jpg");
     return render_template("visualize.html")
