@@ -5,17 +5,20 @@
 </head>
 <body>
 
-<form action="/visualize" method="POST">
+<form action="/visualize" method="POST" enctype="multipart/form-data">
 <H1 style="margin-left:1em;">Please select any one of the Popular Datasets for Visualization.</H1>
-
-<p style="margin-left:5em;"><input type="radio" name="option" value="houseprice" checked> Boston House-Prices Dataset </p>
+<p style="margin-left:5em;"><input type="radio" name="option" value="houseprice"> Boston House-Prices Dataset </p>
 <p style="margin-left:5em;"><input type="radio" name="option" value="iris"> Iris Dataset </p>
 <p style="margin-left:5em;"><input type="radio" name="option" value="diabetes"> Diabetes Dataset </p>
 <p style="margin-left:5em;"><input type="radio" name="option" value="wine"> Wine Dataset </p>
 <p style="margin-left:5em;"><input type="radio" name="option" value="breastcancer"> Breast Cancer Wiscons in Dataset </p>
 
-<p style="margin-left:5em;">&nbsp<input type="submit" value="Submit"></p>
 
+<p style="margin-left:1em;"><h2>or</h2></p>
+<p style="margin-left:5em;"><H1>Click the button to create a csv file upload button.</H1></p>
+<p style="margin-left:5em;"><input type="file" name="csvfile" value="csvfile" accept=".csv"> Upload Dataset of csv format with last column as output column</p>
+
+<p style="margin-left:5em;">&nbsp<input type="submit" value="Submit"></p>
 </form>
 
 
