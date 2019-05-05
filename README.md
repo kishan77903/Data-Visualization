@@ -160,7 +160,7 @@ Note: if you are using your own application, make sure you have added a requirem
 
 + Now We have to push our application to the master branch of the above git URL.
 
-`   git push heroku master `
+    `git push heroku master `
 
 # Congratulations 
 
