@@ -26,5 +26,5 @@ sklearn==0.0
 sqlparse==0.3.0
 tornado==6.0.2
 virtualenv==16.5.0
-Werkzeug==0.15.2
+Werkzeug==0.15.3
 wincertstore==0.2
